@@ -235,7 +235,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center myServices">
 						<div class="feature-left">
 							<span class="icon">
 								<i class="icon-paintbrush"></i>
@@ -247,7 +247,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center myServices">
 						<div class="feature-left">
 							<span class="icon">
 								<i class="icon-briefcase"></i>
@@ -259,7 +259,7 @@
 						</div>
 
 					</div>
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center myServices">
 						<div class="feature-left">
 							<span class="icon">
 								<i class="icon-search"></i>
@@ -558,7 +558,7 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading ">
 					<h2>Hire Me!</h2>
 					<p>Are you interested in my Portfolio?<br>Don't you want my service?<br>Please feel fee to talk the Business..</p>
 					<p><a href="https://wa.me/919746390769" class="btn btn-default btn-lg" target="_blank">Contact me on WhatsApp</a></p>
@@ -576,30 +576,30 @@
 			<form id="submit-form" action="">
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname" required="required">
+						<input type="text" id="fname" name="fname" class="form-control" placeholder="Your firstname" required="required">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname" required="required">
+						<input type="text" id="lname" name="lname" class="form-control" placeholder="Your lastname" required="required">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="email" id="email" class="form-control" placeholder="Your email address" required="required">
+						<input type="email" id="email" name="email" class="form-control" placeholder="Your email address" required="required">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message" required="required">
+						<input type="text" id="subject" name="subject" class="form-control" placeholder="Your subject of this message" required="required">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+						<textarea name="message" id="message" name="text" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
@@ -647,7 +647,7 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbxqpDQAhO5wnZlnrxjHClOuEL29xdNzRQoWewc4aCl5ypEnSRZ1JPF2Br1dp6gW4up_Eg/exec",
+                url:"https://script.google.com/macros/s/AKfycbxw67FX73EnfzRQmqr84L9WMC--unhsW05hxTbIWyxnuAYvEDKFuxt9Y6QvxIsikjxXFQ/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){

@@ -18,7 +18,19 @@ body {
   color: #4d4d4d;
   background: #fff;
 }
-
+.myServices{
+  padding-top: 3rem;
+  transition: 0.3s ease-in-out;
+  height: 350px;
+}
+.myServices:hover{
+  background-color: rgb(248, 61, 4);
+  transform: scale(0.9);
+}
+.WhatsApp :hover{
+  background-color: orchid;
+  transform: scale(1.1rem);
+}
 #page {
   position: relative;
   overflow-x: hidden;
@@ -807,6 +819,12 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
+  transition: 0.4s ease-in;
+}
+#fh5co-started .btn:hover{
+  background-color:rgb(199, 33, 21);
+  color: #fff;  
+  transform:scale(1.1)
 }
 
 .fh5co-blog {
@@ -1108,6 +1126,8 @@ input[type="text"] {
 .btn:hover, .btn:active, .btn:focus {
   box-shadow: none !important;
   outline: none !important;
+
+  
 }
 
 .btn-primary {
